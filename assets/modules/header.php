@@ -24,6 +24,7 @@
                     <li><a href="<?php __DIR__ ?>/assets/pages/les3.php">While </a></li>
                     <li><a href="<?php __DIR__ ?>/assets/pages/les4.php">Foreach </a></li>
                     <li><a href="<?php __DIR__ ?>/assets/pages/les5.php">Function </a></li>
+                    <li><a href="<?php __DIR__ ?>/assets/pages/les6.php">БД SQL СУБД </a></li>
                 </ul>
             </nav>
             <div class="flex">

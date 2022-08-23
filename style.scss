@@ -46,6 +46,9 @@ input[type='submit'] {
   outline: none;
   border: 1px solid #c1c1c1;
 }
+label {
+  user-select: none;
+}
 input[type='submit'] {
   cursor: pointer;
 }
@@ -65,10 +68,15 @@ header {
   width: 100%;
   @extend %main_block;
   @extend %reset_ul;
+  nav {
+    margin: 0 20px;
+  }
   ul {
     display: flex;
     li {
       margin-right: 15px;
+      display: flex;
+      align-items: center;
     }
   }
 }
@@ -91,7 +99,7 @@ aside {
   height: 100%;
   @extend %reset_ul;
   input {
-    margin: 5px 0;
+    margin: 5px;
   }
 }
 .content {

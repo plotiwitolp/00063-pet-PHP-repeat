@@ -58,6 +58,13 @@ input[type=submit] {
   border: 1px solid #c1c1c1;
 }
 
+label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 input[type=submit] {
   cursor: pointer;
 }
@@ -84,6 +91,9 @@ header {
   position: fixed;
   width: 100%;
 }
+header nav {
+  margin: 0 20px;
+}
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,6 +101,12 @@ header ul {
 }
 header ul li {
   margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main {
@@ -111,7 +127,7 @@ aside {
   height: 100%;
 }
 aside input {
-  margin: 5px 0;
+  margin: 5px;
 }
 
 .content {

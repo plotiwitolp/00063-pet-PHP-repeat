@@ -30,6 +30,13 @@
                 foreach ($arr as $value) {
                     echo $value . ', ';
                 }
+                echo $br;
+                echo min($arr);
+                echo $br;
+                echo max($arr);
+                echo $br;
+                echo array_sum($arr) / count($arr);
+                echo $br;
 
                 ?>
             </p>
