@@ -1,9 +1,4 @@
 <aside>
-    <ul>
-        <li><a href="#">Test 1</a></li>
-        <li><a href="#">Test 2</a></li>
-        <li><a href="#">Test 3</a></li>
-    </ul>
     <form method="GET">
         <input type="text" placeholder="text 1" name="text1">
         <input type="text" placeholder="text 2" name="text2">

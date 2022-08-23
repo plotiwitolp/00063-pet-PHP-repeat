@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-footer, main, header {
+.test-block, .sum, footer, main, header {
   border: 1px solid rgb(14, 14, 14);
   padding: 1em;
   background-color: rgb(72, 72, 72);
@@ -49,6 +49,7 @@ input[type=search],
 input[type=email],
 input[type=password],
 input[type=text],
+input[type=number],
 input[type=submit] {
   height: 25px;
   padding: 0 10px;
@@ -83,6 +84,14 @@ header {
   position: fixed;
   width: 100%;
 }
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header ul li {
+  margin-right: 15px;
+}
 
 main {
   -webkit-box-flex: 1;
@@ -99,6 +108,7 @@ aside {
   border: 1px solid #777;
   border-radius: 5px;
   width: 20%;
+  height: 100%;
 }
 aside input {
   margin: 5px 0;
@@ -107,9 +117,37 @@ aside input {
 .content {
   width: 80%;
 }
+.content form {
+  margin-top: 10px;
+}
 
 .checkboxgroup {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 15px;
+}
+
+.err {
+  color: red;
+  padding-left: 15px;
+  padding-top: 5px;
+  display: inline-block;
+}
+
+.sum {
+  margin: 10px;
+  padding: 5px 30px;
+  background-color: #000172;
+  display: inline-block;
+}
+
+.test-block {
+  margin: 10px;
+  padding: 5px 30px;
+  background-color: rgba(0, 1, 114, 0.1294117647);
+}
+
+mybr {
+  display: block;
+  margin-top: 10px;
 }

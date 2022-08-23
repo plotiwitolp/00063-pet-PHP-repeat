@@ -3,9 +3,14 @@
     <div class="container flex">
         <?php require_once __DIR__ . '/assets/modules/sidebar.php'; ?>
         <div class="content">
-            <h1>Lorem ipsum</h1>
+            <h1>Главная страница</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione illo adipisci itaque reprehenderit enim labore quidem repellat recusandae consequuntur eaque! Accusantium alias rem explicabo illum molestias libero deleniti, saepe fugiat?
+            <h2>Данные с сайдбара:</h2>
+            <span class="sum">text1: <?= $_GET["text1"] ?></span>
+            <span class="sum">text2: <?= $_GET["text2"] ?></span>
+            <span class="sum">text3: <?= $_GET["text3"] ?></span>
+            <span class="sum">checkbox1: <?= $_GET["checkbox1"] ?></span>
+            <span class="sum">checkbox2: <?= $_GET["checkbox2"] ?></span>
             </p>
         </div>
     </div>

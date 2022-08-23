@@ -38,6 +38,7 @@ input[type='search'],
 input[type='email'],
 input[type='password'],
 input[type='text'],
+input[type='number'],
 input[type='submit'] {
   height: 25px;
   padding: 0 10px;
@@ -64,6 +65,12 @@ header {
   width: 100%;
   @extend %main_block;
   @extend %reset_ul;
+  ul {
+    display: flex;
+    li {
+      margin-right: 15px;
+    }
+  }
 }
 main {
   flex: 1 0 auto;
@@ -81,6 +88,7 @@ aside {
   border: 1px solid #777;
   border-radius: 5px;
   width: 20%;
+  height: 100%;
   @extend %reset_ul;
   input {
     margin: 5px 0;
@@ -88,9 +96,35 @@ aside {
 }
 .content {
   width: 80%;
+  form {
+    margin-top: 10px;
+  }
 }
 .checkboxgroup {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 15px;
+}
+.err {
+  color: red;
+  padding-left: 15px;
+  padding-top: 5px;
+  display: inline-block;
+}
+.sum {
+  @extend %main_block;
+  margin: 10px;
+  padding: 5px 30px;
+  background-color: #000172;
+  display: inline-block;
+}
+.test-block {
+  @extend %main_block;
+  margin: 10px;
+  padding: 5px 30px;
+  background-color: #00017221;
+}
+mybr {
+  display: block;
+  margin-top: 10px;
 }
