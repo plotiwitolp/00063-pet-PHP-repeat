@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+%main_block {
+  border: 1px solid rgb(14, 14, 14);
+  padding: 1em;
+  background-color: rgb(72 72 72);
+  border-radius: 5px;
+}
+%reset_ul {
+  ul {
+    list-style-type: none;
+  }
+}
+html,
+body {
+  height: 100%;
+  color: #fff;
+}
+body {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: rgb(255 196 122);
+  font-weight: bold;
+  transition: 0.2s;
+  &:hover {
+    color: rgb(255, 225, 187);
+  }
+}
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='text'],
+input[type='submit'] {
+  height: 25px;
+  padding: 0 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #c1c1c1;
+}
+input[type='submit'] {
+  cursor: pointer;
+}
+form {
+  margin-left: 10px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  position: fixed;
+  width: 100%;
+  @extend %main_block;
+  @extend %reset_ul;
+}
+main {
+  flex: 1 0 auto;
+  @extend %main_block;
+  width: 1200px;
+  margin: 20px auto;
+  margin-top: 85px;
+}
+footer {
+  @extend %main_block;
+}
+aside {
+  margin-right: 30px;
+  padding: 10px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  width: 20%;
+  @extend %reset_ul;
+  input {
+    margin: 5px 0;
+  }
+}
+.content {
+  width: 80%;
+}
+.checkboxgroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 15px;
+}
