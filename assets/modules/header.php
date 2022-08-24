@@ -25,24 +25,23 @@
                     <li><a href="<?php __DIR__ ?>/assets/pages/les4.php">Foreach </a></li>
                     <li><a href="<?php __DIR__ ?>/assets/pages/les5.php">Function </a></li>
                     <li><a href="<?php __DIR__ ?>/assets/pages/les6.php">БД SQL СУБД </a></li>
+                    <li><a href="<?php __DIR__ ?>/assets/pages/les7.php">БД SQL СУБД repeat </a></li>
                 </ul>
             </nav>
-            <div class="flex">
-                <div class="header__search">
-                    <input type="search" name="search" placeholder="Search">
-                </div>
-                <div>
-                    <form action="<?php __DIR__ ?>/assets/modules/login.php" method="POST">
-                        <input type="email" name="email" placeholder="email" required>
-                        <input type="password" name="password" placeholder="password" required>
-                        <input type="submit" value="Log in">
-                    </form>
-                    <?php
-                    if ($_GET['error'] == 'err') {
-                        echo '<span class="err">Неверный логин/пароль</span>';
-                    }
-                    ?>
-                </div>
+        </div>
+        <div class="container flex">
+            <div></div>
+            <div>
+                <form action="<?php __DIR__ ?>/assets/modules/login.php" method="POST">
+                    <input type="email" name="email" placeholder="email" required>
+                    <input type="password" name="password" placeholder="password" required>
+                    <input type="submit" value="Log in">
+                </form>
+                <?php
+                if ($_GET['error'] == 'err') {
+                    echo '<span class="err">Неверный логин/пароль</span>';
+                }
+                ?>
             </div>
         </div>
     </header>

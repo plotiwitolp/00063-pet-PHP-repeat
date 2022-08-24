@@ -1,7 +1,6 @@
 <?php require_once __DIR__ . '/../modules/header.php'; ?>
 <main>
     <div class="container flex">
-        <?php require_once __DIR__ . '/../modules/sidebar.php'; ?>
         <div class="content">
             <h1>Math</h1>
             <p>

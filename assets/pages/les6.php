@@ -1,7 +1,7 @@
 <?php require_once __DIR__ . '/../modules/header.php'; ?>
 <main>
     <div class="container flex">
-        <?php require_once __DIR__ . '/../modules/sidebar.php'; ?>
+        <?php require_once __DIR__ . '/../modules/sidebars/sidebar1.php'; ?>
         <div class="content">
             <h1>БД SQL СУБД</h1>
             <p>
@@ -19,6 +19,8 @@
                 if (!$connection) exit; // выйти, если не удалось соединиться
                 // 2
                 $result = mysqli_query($connection, "SELECT * FROM `articles`"); // сделать запрос в БД, получить всё из таблицы
+                // echo 'Записей найдено: ' . mysqli_num_rows($result);
+
                 // 3
                 while ($r = mysqli_fetch_assoc($result)) { // проитерировать все имеющиеся результаты
                     foreach ($_GET as $value) {
@@ -27,15 +29,10 @@
                         }
                     }
                 }
-                function addArticle()
-                {
-                    global $connection;
-                    mysqli_query($connection, "INSERT INTO `articles` (`title`, `text`, `categorie_id`) VALUE ('Test', 'Lorem ipsum.', '4')");
-                }
+                mysqli_close($connection);
                 ?>
             </p>
         </div>
     </div>
 </main>
-
 <?php require_once __DIR__ . '/../modules/footer.php'; ?>

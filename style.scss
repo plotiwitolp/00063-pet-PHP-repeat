@@ -14,6 +14,9 @@
     list-style-type: none;
   }
 }
+span {
+  padding-right: 10px;
+}
 html,
 body {
   height: 100%;
@@ -68,13 +71,10 @@ header {
   width: 100%;
   @extend %main_block;
   @extend %reset_ul;
-  nav {
-    margin: 0 20px;
-  }
   ul {
     display: flex;
     li {
-      margin-right: 15px;
+      margin-left: 15px;
       display: flex;
       align-items: center;
     }
@@ -85,7 +85,7 @@ main {
   @extend %main_block;
   width: 1200px;
   margin: 20px auto;
-  margin-top: 85px;
+  margin-top: 125px;
 }
 footer {
   @extend %main_block;
@@ -135,4 +135,10 @@ aside {
 mybr {
   display: block;
   margin-top: 10px;
+}
+.w100 {
+  min-width: 100px;
+  display: inline-block;
+  border: 1px solid #888;
+  text-align: center;
 }
